@@ -12,8 +12,8 @@ import static runner.CucumberDriver.getDriver;
 
 public class CucumberSteps {
 
-    @When ("Open Main Page")
-    public void openRedRoverMainPageP(){
+    @When ("Open Main {string} Page")
+    public void openRedRoverMainPageP(String siteName){
         CucumberDriver.getDriver().get("https://redrover.school");
     }
 

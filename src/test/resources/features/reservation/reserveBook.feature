@@ -12,6 +12,20 @@ Feature: Reserve a book
     Then Reservation appears on the Profile page
     Then Email and SMS reservation notification received
 
+    Scenario Outline: Reserve books with various registration ways
+      When Guest selects a book
+      When Guest selects store from list
+      When Guest registers via "<registration_way>"
+      When Guest fills up mandatory registration "<field>"
+      When User reserves book
+      Then Reservation appears on the Profile page
+      Then Email and SMS reservation notification received
+
+      Examples:
+      | registration_way  | field         |
+      | phone number      | 1112233       |
+      | email             | test@mail.com |
+
   @regression @smoke
   Scenario: Reserve a book as a registered user
     Given User is logged in the app
