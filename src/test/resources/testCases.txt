@@ -1,0 +1,50 @@
+1. create account
+1.1. user creates an account with correct credentials
+    click "Sign up" button on page header - "Sign up" popup appears
+    user enters username "supertester"
+    user enters password "12345678"
+    user clicks "Sign up" button - alert window "Sign up successful." appears.
+
+1.2. user creates an account with existing user credentials
+    click "Sign up" button on page header - "Sign up" popup appears
+    user enters username "supertester"
+    user enters password "12345678"
+    user clicks "Sign up" button - alert window "This user already exist." appears.
+
+2. logs in
+2.1. user logs in with correct credentials
+    user clicks "Log in" button on page header - "Log in" popup appears
+    user enters username "supertester"
+    user enters password "12345678"
+    user clicks "Log in" button - main page with greeting in header "Welcome supertester" opens
+
+2.2. user logs in with incorrect username
+    user clicks "Log in" button on page header - "Log in" popup appears
+    user enters username "supertester3"
+    user enters password "12345678"
+    user clicks "Log in" button - alert window "User does not exist." appears.
+
+2.3. user logs in with incorrect password
+    user clicks "Log in" button on page header - "Log in" popup appears
+    user enters username "supertester"
+    user enters password "12345678"
+    user clicks "Log in" button - alert window "Wrong password." appears.
+
+3. user buys product
+    precondition: user is authorized on the site
+
+3.1. user adds product to the cart
+    user clicks on "HTC One M9" item image on the main page - page with url "https://www.demoblaze.com/prod.html?idp_=7#" opens
+    user clicks on "Add to cart" button - popup with text "Product added." appears
+
+3.2. user places the order and purchases the product
+    user clicks "Cart" button on the header - page with url "https://www.demoblaze.com/cart.html" opens
+    user clicks "Place Order" button - popup for enter obligatory credentials appears
+    user enters Name "John"
+    user enters Country "Zimbabwe"
+    user enters City "Harare"
+    user enters Credit card number "1111222233334444"
+    user enters Month 12
+    user enters Year 23
+    user clicks "Purchase" button - popup with text "Thank you for your purchase!" appears
+    user clicks "OK" button - main page opens

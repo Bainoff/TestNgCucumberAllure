@@ -14,7 +14,7 @@ public class CucumberSteps {
 
     @When ("Open Main {string} Page")
     public void openRedRoverMainPageP(String siteName){
-        CucumberDriver.getDriver().get("https://redrover.school");
+        CucumberDriver.getDriver().get(siteName);
     }
 
     @Then("Main Page is opened")
