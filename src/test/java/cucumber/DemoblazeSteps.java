@@ -103,7 +103,7 @@ public class DemoblazeSteps {
 
     @When ("User clicks on 'HTC One M9' item image on the main page")
     public void clickHtcItem(){
-        CucumberDriver.getDriver().findElement(By.cssSelector("a[href='prod.html?idp_=7']")).click();
+        CucumberDriver.getDriver().findElement(By.cssSelector("a[href='prod.html?idp_=7'].hrefch")).click();
     }
 
     @When ("User clicks on 'Add to cart' button on product page")

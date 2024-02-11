@@ -22,7 +22,7 @@ public class CucumberDriver {
         /*if(scenario.isFailed()) {
             BaseUtils.captureScreenFile(driver, scenario.getName(), "CucumberTest");
         }*/
-//        driver.quit();
+        driver.quit();
     }
 
     public static WebDriver getDriver() {
